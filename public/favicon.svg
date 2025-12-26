@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="ballGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B1A"/>
+      <stop offset="100%" style="stop-color:#FF4D00"/>
+    </linearGradient>
+  </defs>
+  <!-- Basketball circle -->
+  <circle cx="50" cy="50" r="46" fill="url(#ballGradient)"/>
+  <!-- Basketball lines -->
+  <path d="M50 4 C50 4 96 50 50 96 C4 50 50 4 50 4" fill="none" stroke="#CC3D00" stroke-width="3"/>
+  <path d="M4 50 H96" stroke="#CC3D00" stroke-width="3"/>
+  <path d="M50 4 V96" stroke="#CC3D00" stroke-width="3"/>
+  <!-- Highlight -->
+  <ellipse cx="35" cy="30" rx="12" ry="8" fill="rgba(255,255,255,0.2)" transform="rotate(-30 35 30)"/>
+</svg>

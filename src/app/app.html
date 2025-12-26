@@ -1,0 +1,539 @@
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="#" class="logo">
+      <img src="assets/logo.png" alt="Swag Basketball Academy" class="logo-img">
+    </a>
+    <button class="mobile-toggle" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" [class.active]="menuOpen()">
+      <li><a href="#about" (click)="closeMenu()">About</a></li>
+      <li><a href="#programs" (click)="closeMenu()">Programs</a></li>
+      <li><a href="#pricing" (click)="closeMenu()">Pricing</a></li>
+      <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+      <li><a href="#contact" class="btn btn-primary nav-cta" (click)="closeMenu()">Join Now</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">
+      ELEVATE YOUR
+      <span class="highlight">GAME</span>
+    </h1>
+    <p class="hero-subtitle">
+      Train with an NBA G League Champion. Professional coaching for all ages and skill levels.
+    </p>
+    <div class="hero-buttons">
+      <a href="#programs" class="btn btn-primary">View Programs</a>
+      <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number">G League</span>
+        <span class="stat-label">Champion Coach</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">All Ages</span>
+        <span class="stat-label">3yrs to Varsity</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">Pro</span>
+        <span class="stat-label">Training Methods</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- Sessions Section -->
+<section class="sessions">
+  <div class="container">
+    <h2 class="section-title">Sessions In <span class="highlight">Action</span></h2>
+    <p class="section-subtitle">See our training programs in action - building skills, confidence, and teamwork</p>
+
+    <div class="sessions-grid">
+      <div class="session-card large">
+        <img src="assets/IMG_kids.jpeg" alt="Youth Basketball Camp">
+        <div class="session-overlay">
+          <span class="session-tag">Basketball Clinics</span>
+          <p>Large group training sessions focused on fundamentals</p>
+        </div>
+      </div>
+      <div class="session-card">
+        <img src="assets/IMG_kids_3.jpeg" alt="Youth Training Session">
+        <div class="session-overlay">
+          <span class="session-tag">Youth Development</span>
+          <p>Age-appropriate skill building</p>
+        </div>
+      </div>
+      <div class="session-card">
+        <img src="assets/IMG_kids_2.jpeg" alt="Group Instruction">
+        <div class="session-overlay">
+          <span class="session-tag">Group Instruction</span>
+          <p>Learning from experienced coaches</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About / Coach Section -->
+<section id="about" class="about">
+  <div class="container">
+    <h2 class="section-title">Meet Your <span class="highlight">Coach</span></h2>
+    <p class="section-subtitle">Learn from someone who's been on the court with the best</p>
+
+    <div class="about-grid">
+      <div class="about-images">
+        <div class="image-stack">
+          <img src="assets/IMG_1989.JPG" alt="G League Championship Trophy" class="main-image">
+          <img src="assets/IMG_1949.JPG" alt="With NBA Players" class="overlay-image">
+        </div>
+      </div>
+      <div class="about-content">
+        <h3>Elite Coaching at Every Level</h3>
+        <p>
+          Our head coach brings unmatched experience from the professional ranks to youth development.
+          Having coached at the NBA G League, NCAA Division I, II, and III levels, he understands
+          what it takes to develop players and help them reach their full potential.
+        </p>
+
+        <div class="experience-section">
+          <div class="experience-group">
+            <h4>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 15l-2 5l9-9l-9-9l2 5H4v8h8z"/>
+              </svg>
+              Coaching Experience
+            </h4>
+            <ul class="experience-list">
+              <li><span class="exp-level">NBA G League</span> RGV Vipers</li>
+              <li><span class="exp-level">NCAA Div I</span> UTRGV</li>
+              <li><span class="exp-level">NCAA Div II</span> Dallas Baptist University</li>
+              <li><span class="exp-level">NCAA Div III</span> Schreiner University</li>
+              <li><span class="exp-level">NJCAA</span> Southeastern Illinois College</li>
+              <li><span class="exp-level">High School</span> Brownsville Veterans Memorial HS</li>
+              <li><span class="exp-level">Academy</span> Sean Dockery's Basketball Academy</li>
+              <li><span class="exp-level">Academy</span> NBA Jr Viper Academy</li>
+            </ul>
+          </div>
+
+          <div class="experience-group">
+            <h4>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                <line x1="15" y1="9" x2="15.01" y2="9"/>
+              </svg>
+              Head Coaching Experience
+            </h4>
+            <ul class="experience-list">
+              <li><span class="exp-level">High School</span> Dumas HS</li>
+              <li><span class="exp-level">High School</span> IDEA Edinburg College Prep</li>
+              <li><span class="exp-level">AAU</span> JR Vipers</li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary">Start Training Today</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery">
+  <div class="gallery-track">
+    <div class="gallery-item">
+      <img src="assets/IMG_1989.JPG" alt="G League Championship Trophy">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/IMG_1946.JPG" alt="Training Session">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/IMG_1986.JPG" alt="Championship Celebration">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/IMG_1947.JPG" alt="Court Practice">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/IMG_1985.JPG" alt="Jr Vipers Academy Coaches">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/IMG_1948.JPG" alt="Skills Training">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/IMG_1987.PNG" alt="With NBA Player">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/IMG_1958.JPG" alt="Basketball Training">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/IMG_1989.JPG" alt="G League Championship Trophy">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/IMG_1946.JPG" alt="Training Session">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/IMG_1986.JPG" alt="Championship Celebration">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/IMG_1947.JPG" alt="Court Practice">
+    </div>
+  </div>
+</section>
+
+<!-- Programs Section -->
+<section id="programs" class="programs">
+  <div class="container">
+    <h2 class="section-title">Training <span class="highlight">Programs</span></h2>
+    <p class="section-subtitle">Age-appropriate training designed to build fundamentals and advance skills</p>
+
+    <div class="programs-grid">
+      <!-- Program 1 -->
+      <div class="program-card">
+        <div class="program-badge">Ages 3-5</div>
+        <div class="program-icon">
+          <svg viewBox="0 0 100 100" fill="none">
+            <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="3"/>
+            <path d="M50 5 C50 5 95 50 50 95 C5 50 50 5 50 5" stroke="currentColor" stroke-width="3"/>
+            <path d="M5 50 H95" stroke="currentColor" stroke-width="3"/>
+          </svg>
+        </div>
+        <h3>Little Ballers</h3>
+        <div class="program-time">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+          4:45 PM - 5:30 PM
+        </div>
+        <ul class="program-features">
+          <li>Introduction to basketball</li>
+          <li>Motor skill development</li>
+          <li>Fun, engaging activities</li>
+          <li>Building coordination</li>
+          <li>Team interaction basics</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Enroll Now</a>
+      </div>
+
+      <!-- Program 2 -->
+      <div class="program-card featured">
+        <div class="program-badge">Grades 1-5</div>
+        <div class="featured-tag">Most Popular</div>
+        <div class="program-icon">
+          <svg viewBox="0 0 100 100" fill="none">
+            <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="3"/>
+            <path d="M50 5 C50 5 95 50 50 95 C5 50 50 5 50 5" stroke="currentColor" stroke-width="3"/>
+            <path d="M5 50 H95" stroke="currentColor" stroke-width="3"/>
+          </svg>
+        </div>
+        <h3>Rising Stars</h3>
+        <div class="program-time">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+          5:30 PM - 6:30 PM
+        </div>
+        <ul class="program-features">
+          <li>Fundamental skill building</li>
+          <li>Dribbling & ball handling</li>
+          <li>Shooting mechanics</li>
+          <li>Defensive positioning</li>
+          <li>Game situation training</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Enroll Now</a>
+      </div>
+
+      <!-- Program 3 -->
+      <div class="program-card">
+        <div class="program-badge">5th - Varsity</div>
+        <div class="program-icon">
+          <svg viewBox="0 0 100 100" fill="none">
+            <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="3"/>
+            <path d="M50 5 C50 5 95 50 50 95 C5 50 50 5 50 5" stroke="currentColor" stroke-width="3"/>
+            <path d="M5 50 H95" stroke="currentColor" stroke-width="3"/>
+          </svg>
+        </div>
+        <h3>Elite Training</h3>
+        <div class="program-time">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+          Two Sessions Available
+        </div>
+        <div class="session-times">
+          <div class="session">
+            <span class="session-label">Session 1 (5th-8th):</span>
+            <span class="session-time">6:30 - 7:30 PM</span>
+          </div>
+          <div class="session">
+            <span class="session-label">Session 2 (7th-Varsity):</span>
+            <span class="session-time">7:30 - 8:30 PM</span>
+          </div>
+        </div>
+        <ul class="program-features">
+          <li>Advanced techniques</li>
+          <li>Competition prep</li>
+          <li>Strength & conditioning</li>
+          <li>Game IQ development</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Enroll Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing">
+  <div class="container">
+    <h2 class="section-title">Simple <span class="highlight">Pricing</span></h2>
+    <p class="section-subtitle">Invest in your future. Professional training at an affordable price.</p>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+      <div class="pricing-header">
+        <h3>All Programs</h3>
+        <p>Same great pricing for every age group</p>
+      </div>
+      <div class="pricing-body">
+        <div class="price-item">
+          <div class="price-info">
+            <span class="price-label">Registration Fee</span>
+            <span class="price-note">(One-time, includes practice jersey)</span>
+          </div>
+          <div class="price-amount">$50</div>
+        </div>
+        <div class="price-item highlight-price">
+          <div class="price-info">
+            <span class="price-label">Monthly Training</span>
+            <span class="price-note">(Unlimited sessions in your program)</span>
+          </div>
+          <div class="price-amount">$140<span>/mo</span></div>
+        </div>
+      </div>
+      <div class="pricing-features">
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+          <span>Practice jersey included</span>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+          <span>Professional coaching</span>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+          <span>Age-appropriate training</span>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+          <span>Skill progression tracking</span>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-large">Get Started Today</a>
+      </div>
+
+      <!-- Private Training Card -->
+      <div class="pricing-card private">
+        <div class="pricing-header">
+          <h3>Private Training</h3>
+          <p>One-on-one and small group sessions</p>
+        </div>
+        <div class="pricing-body">
+          <div class="price-item">
+            <div class="price-info">
+              <span class="price-label">1-on-1 Training</span>
+              <span class="price-note">(Individual focused session)</span>
+            </div>
+            <div class="price-amount">$50<span>/hr</span></div>
+          </div>
+          <div class="price-item highlight-price">
+            <div class="price-info">
+              <span class="price-label">Group Training</span>
+              <span class="price-note">(3 players max)</span>
+            </div>
+            <div class="price-amount">$100<span>/hr</span></div>
+          </div>
+        </div>
+        <div class="pricing-features">
+          <div class="feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            <span>Personalized attention</span>
+          </div>
+          <div class="feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            <span>Custom skill development</span>
+          </div>
+          <div class="feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            <span>Flexible scheduling</span>
+          </div>
+          <div class="feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            <span>Accelerated improvement</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-large">Book a Session</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+    <p class="section-subtitle">Ready to start your basketball journey? Contact us today!</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="contact-details">
+            <h4>Location</h4>
+            <p>427 Couch Road<br>Olmito, TX 78575</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <div class="contact-details">
+            <h4>Phone</h4>
+            <p><a href="tel:9564552492">(956) 455-2492</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div class="contact-details">
+            <h4>Email</h4>
+            <p><a href="mailto:alan_21209@hotmail.com">alan_21209&#64;hotmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </div>
+          <div class="contact-details">
+            <h4>Facebook</h4>
+            <p><a href="https://www.facebook.com/share/1AazfLNo6m/?mibextid=wwXIfr" target="_blank" rel="noopener">Follow us on Facebook</a></p>
+          </div>
+        </div>
+
+        <div class="schedule-summary">
+          <h4>Training Schedule</h4>
+          <div class="schedule-item">
+            <span class="time">4:45 - 5:30 PM</span>
+            <span class="group">Ages 3-5</span>
+          </div>
+          <div class="schedule-item">
+            <span class="time">5:30 - 6:30 PM</span>
+            <span class="group">Grades 1-5</span>
+          </div>
+          <div class="schedule-item">
+            <span class="time">6:30 - 7:30 PM</span>
+            <span class="group">Grades 5-8</span>
+          </div>
+          <div class="schedule-item">
+            <span class="time">7:30 - 8:30 PM</span>
+            <span class="group">7th - Varsity</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.8!2d-97.5!3d26.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDAxJzEyLjAiTiA5N8KwMzAnMDAuMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+          width="100%"
+          height="100%"
+          style="border:0; border-radius: 12px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="map-overlay">
+          <a href="https://maps.google.com/?q=427+Couch+Road+Olmito+TX+78575" target="_blank" class="btn btn-primary">
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Swag Basketball Academy" class="footer-logo">
+        <p>Developing champions on and off the court.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1AazfLNo6m/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Swag Basketball Academy. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<router-outlet />
