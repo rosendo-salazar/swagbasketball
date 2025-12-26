@@ -120,6 +120,7 @@ $gray-light: #ccd6f6;
   position: relative;
   background: linear-gradient(135deg, $dark 0%, $secondary 100%);
   overflow: hidden;
+  padding-top: 80px; // Account for fixed navbar
 
   &::before {
     content: '';
@@ -228,6 +229,10 @@ $gray-light: #ccd6f6;
       background: linear-gradient(to bottom, $primary, transparent);
       animation: scroll 2s ease-in-out infinite;
     }
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 90px; // Extra padding on mobile for navbar
   }
 }
 
